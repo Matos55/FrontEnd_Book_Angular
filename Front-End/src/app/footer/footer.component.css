@@ -1,0 +1,54 @@
+/* flex na secção: footer */
+footer {
+    background: #162c3b;
+    padding: 2px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.text{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* flex no ul */
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/* remover os pontos */
+footer ul li {
+    list-style: none;
+}
+
+/* props nos links */
+footer ul li a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* inverter as cores e limites às imagens */
+footer ul li a img {
+    filter: invert(1); /* The invert() CSS function inverts the color samples in the input image */ /* Neste caso invert o escuro para branco */
+    max-width: 20px;
+}
+
+@media (max-width: 700px) {
+    footer {
+        padding: 10px 20px;
+        flex-direction: column-reverse; /* dá-me a coluna a começar do fim para o inicio */
+        text-align: center;
+    }
+
+    footer ul{
+        margin-bottom: 2px;
+    }
+}

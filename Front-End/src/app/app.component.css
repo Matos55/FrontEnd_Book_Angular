@@ -1,0 +1,57 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px auto; 
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 5px;
+    grid-template-areas:
+        "navbar navbar"
+        "asidebar router"
+        "footer footer";
+    height: 100vh;
+    /* box-sizing: border-box; */
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+app-nav-bar {
+    grid-area: navbar;
+    position: sticky;  
+    top: 0;
+}
+
+app-aside-book-list {
+    grid-area: asidebar;
+    overflow: auto;
+}
+
+router-outlet {
+    grid-area: router;
+}
+
+app-footer {
+    grid-area: footer;
+    bottom: 0;
+}
+  
+
+@media only screen and (max-width: 700px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-gap: 5px;
+        grid-template-areas:
+            "navbar"
+            "asidebar" 
+            "router"
+            "footer";
+    }
+
+    section.asideBar {
+        display: none;
+    }
+
+}

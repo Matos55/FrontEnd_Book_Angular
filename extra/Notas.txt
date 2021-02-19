@@ -1,0 +1,33 @@
+
+
+1) sacar o backend
+npm install
+npm start
+
+2) http://localhost:3000/books?id=OL10682512M&format=json&jscmd=details
+
+
+
+/***********************************************************/
+- MVP
+Lista de livros
+Detalhe de um livro
+    - Capa
+    - Titulo
+    - Autor(es)
+    - Sinopse
+- Iteraçao X
+Lista numa sidebar, colapsavel
+Sidebar so aparece para "mobile" (hamburguer)
+Desktop sempre visivel
+- Iteraçao Y
+Placeholder (sidebar + detalhe do livro)
+- Iteração Z
+Homepage (sidebar sempre visivel)
+- Iteraçao Batatas
+Cache
+- Iteraçao ASDASFDASFsdfghbh
+Search
+
+
+/***********************************************************/

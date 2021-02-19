@@ -1,0 +1,16 @@
+<header>
+    <nav>
+    
+      <span><button (click)="onClick()">Press to BookList</button></span>
+      <span class="menu-icons open" (click)="onOpen()"><i class="icon ion-md-menu"></i></span>
+    
+      <ul [ngClass]="{
+        'nav-list': true,
+        'active': navBarStatus}" (click)="onClose()">
+        <li class="menu-icons close"><i class="icon ion-md-close"></i></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>

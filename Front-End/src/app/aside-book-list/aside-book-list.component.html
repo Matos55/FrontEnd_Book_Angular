@@ -1,0 +1,29 @@
+
+
+<div class="bgColor">
+
+  <input type="text" placeholder="Enter AUTHOR and hold for a moment..." (input)="terms$.next($event.target.value)">
+  
+  <br><br>
+
+  <div class="list">
+    
+    <span id="loading">
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      Must type AUTHOR
+    </span>
+
+    <br><br>
+    
+    <ul *ngIf="bookListMap">
+        <li *ngFor="let book of bookListMap">
+          <a href="#" [routerLink]="['/home', book.id]" (click)="onHome()">{{ book.title }}</a>
+          <br>
+          <span class="idBook">{{ book.id }}</span>
+          <hr>
+        </li>
+      </ul>
+
+  </div>
+
+</div>
